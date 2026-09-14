@@ -4,8 +4,8 @@ import { cosmeticsStore } from '../services/cosmeticsStore.js';
 
 export const clientRouter = Router();
 
-let currentMotd = '🐾 CatClient 1.21.11 • Blue Flame Edition • Connected to Itz0Cat Cloud';
-let currentAnnouncement = 'Welcome to CatClient! Enjoy the new Blue Flame UI, Aim Assist, and smooth HUDs.';
+let currentMotd = 'CatClient 1.21.11 | Blue Flame Edition';
+let currentAnnouncement = 'CatClient 1.21.11 online.';
 
 // Session Connect
 clientRouter.post('/session/connect', (req, res) => {

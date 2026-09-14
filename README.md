@@ -1,24 +1,23 @@
-# 🐾 CatClient Cloud Backend
+# CatClient Cloud Backend
 
 > Dedicated lightweight Node.js/Express cloud backend for the [CatClient](https://github.com/itz0cat/CatClient) Fabric 1.21.11 utility mod.
 
 ---
 
-## ⚡ Features
+## Features
 
-- **Session & Telemetry**: Real-time heartbeat tracking and active session management.
-- **In-Game Cat Badges**: Player list batch verification to display client badges above active CatClient users.
+- **Session & Telemetry**: Heartbeat tracking and active session management.
+- **In-Game Badges**: Player list batch verification to display client badges above active CatClient users.
 - **Cosmetics Engine**: Cloud cape and cosmetic unlocking, equipped cosmetics syncing, and disk persistence.
-- **Remote Announcements**: Dynamic Message-of-the-Day (MOTD) and client news.
-- **Render Free-Tier Friendly**: Optimized for zero-memory footprint cold starts, accompanied by client-side idle detection and retry alerts.
+- **Remote Announcements**: Dynamic Message-of-the-Day (MOTD) and client updates.
 
 ---
 
-## 📡 Endpoints
+## Endpoints
 
 | Method | Endpoint | Description |
 | :--- | :--- | :--- |
-| `GET` | `/health` | Live service health, uptime, and active session counts |
+| `GET` | `/health` | Service health, uptime, and active session counts |
 | `POST` | `/api/v1/catclient/session/connect` | Player login & session initiation |
 | `POST` | `/api/v1/catclient/session/disconnect` | Player logout & session cleanup |
 | `POST` | `/api/v1/catclient/session/heartbeat` | Periodic session keepalive |
@@ -31,18 +30,17 @@
 
 ---
 
-## 🚀 Deployment on Render
+## Deployment on Render
 
 This repository includes a `render.yaml` blueprint:
 
-1. Link repository `itz0cat/catclient-backend` on [Render](https://dashboard.render.com).
-2. Choose **Web Service** with Node runtime.
-3. Build command: `npm install`
-4. Start command: `npm start`
-5. Health check path: `/health`
+1. Service is deployed at `https://catclient-backend.onrender.com`.
+2. Build command: `npm install`
+3. Start command: `npm start`
+4. Health check path: `/health`
 
 ---
 
-## 📜 License
+## License
 
-MIT License © 2026 itz0cat
+MIT License
